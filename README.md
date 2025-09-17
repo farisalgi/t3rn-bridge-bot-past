@@ -104,9 +104,8 @@ The bot expects a **hex payload** (the `data` / `input` field of an Ethereum tra
 
 ### 1) From MetaMask (or similar browser wallets)
 1. Send the test transaction in MetaMask (make sure it's a testnet transaction).  
-2. Open MetaMask -> Activity -> find the transaction -> click it to view details.  
-3. On the transaction request, Scroll down and copy the hex string shown.  
-4. Paste that hex string when the bot asks for the data payload.
+2. On the transaction request, Scroll down and copy the hex string shown.  
+3. Paste that hex string when the bot asks for the data payload.
 
 ### 2) From a block explorer (Etherscan / Blockscout / Caldera Explorer)
 1. After sending a transaction, open the explorer for the network (e.g., Sepolia Arbiscan, Blockscout).  
