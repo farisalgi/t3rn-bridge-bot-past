@@ -113,6 +113,7 @@ The bot expects a **hex payload** (the `data` / `input` field of an Ethereum tra
 3. On the transaction page look for **"Input Data"** / **"Hex"** / **"Data"**.  
 4. Copy the full `0x...` hex string and paste it into the bot prompt.
 
+---
 
 ## Notes
 
