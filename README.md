@@ -1,6 +1,6 @@
 # t3rn Transaction Bot
 
-This project provides a Python-based bot to automate Ethereum transactions across multiple test networks (Sepolia variants, Blast, SEI, etc.). It supports both **single-network transactions** and **automatic bidirectional bridging** between two networks, with built-in balance checks, retry logic, and transaction monitoring.
+This project provides a Python-based bot to automate t3rn testnet transactions across multiple test networks (Sepolia variants, Blast, SEI, etc.). It supports both **single-network transactions** and **automatic bidirectional bridging** between two networks, with built-in balance checks, retry logic, and transaction monitoring.
 
 ---
 
@@ -97,6 +97,23 @@ The bot will send 5 transactions sequentially on Arbitrum Sepolia.
 The bot will alternate directions when balances reach the defined threshold.
 
 ---
+
+## How to obtain the transaction payload (hex `data` / input)
+
+The bot expects a **hex payload** (the `data` / `input` field of an Ethereum transaction) when you are asked to enter the "data payload". If you don't already have the payload, use one of these quick ways to obtain it after making a test transaction from your wallet or dApp UI (for example: sending a transaction via t3rn, a contract UI, or a wallet).
+
+### 1) From MetaMask (or similar browser wallets)
+1. Send the test transaction in MetaMask (make sure it's a testnet transaction).  
+2. Open MetaMask -> Activity -> find the transaction -> click it to view details.  
+3. On the transaction request, Scroll down and copy the hex string shown.  
+4. Paste that hex string when the bot asks for the data payload.
+
+### 2) From a block explorer (Etherscan / Blockscout / Caldera Explorer)
+1. After sending a transaction, open the explorer for the network (e.g., Sepolia Arbiscan, Blockscout).  
+2. Search for your transaction hash (tx hash).  
+3. On the transaction page look for **"Input Data"** / **"Hex"** / **"Data"**.  
+4. Copy the full `0x...` hex string and paste it into the bot prompt.
+
 
 ## Notes
 
